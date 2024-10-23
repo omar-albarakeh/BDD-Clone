@@ -17,6 +17,7 @@ body{
     justify-content:center;
     position: fixed;
     width:100%;
+    z-index:11;
 }
 
 .header img {
@@ -66,21 +67,38 @@ a {
 }
 
 .header button:hover {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.831);
     transition: linear 0.3s;
 }
 
 .dropdown {
+    cursor: pointer;
+    padding-left: 20px;
+    list-style: none;
     position: relative;
+    display: inline-block;
+    padding: 0;
+    margin: 0 10px;
+}
+
+.dropdown li:hover {
+    background-color: rgba(255, 255, 255, 0.788);
+    transition: linear;
+    transition-duration: 0.3s;
+}
+
+.dropdown li {
+    padding: 10px 10px 10px 10px;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.397);
-    border: 1px solid #ccc;
-    max-width:150px;
-    max-height:200px;
+    background-color: rgba(255, 255, 255, 0.774);
+    z-index: 15;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccccccd7;
 }
 
 .dropdown:hover .dropdown-content {
@@ -92,19 +110,46 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    padding: 10px;
+    margin: 0;
 }
 
 .dropdown-content ul li {
     list-style: none;
     width: 200px;
     padding: 10px;
-}
-
-.dropdown-content ul>li:hover {
-    background-color: #cccccc;
+    margin: 0;
+    text-align: left;
 }
 
 .dropdown-content a {
+    text-decoration: none;
     color: black;
+    display: block;
     width: 100%;
 }
+
+.dropdown-content ul>li:hover {
+    background-color: #ccccccdf;
+}
+
+.image-container{
+    position:relative;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    background-color:  rgb(238, 238, 238);;
+}
+.image-container img{
+    width: 100%;
+    filter: brightness(75%);
+}
+.welcome-text{
+    position: absolute;
+    top:45%;
+    margin-left:150px;
+    color: white;
+    font-size: 40px;
+    text-transform:capitalize;
+}
+
