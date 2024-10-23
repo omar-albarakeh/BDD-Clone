@@ -298,7 +298,6 @@ a {
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
-
 }
 
 .btn:hover {
@@ -312,6 +311,84 @@ a {
     width:100%;
 }
 .download-section-img img{
-    width:15%;
-    margin-top: 20px;
+    width:150px;
+    height:50px;
+    margin: 20px;
+}
+.download-section-img-2 img{
+    width:150px;
+    height:50px;
+    margin-top:3px;
+}
+
+footer{
+    background-color:#1e1d1d ;
+    list-style: none;
+    height: 370px;
+    padding: 0px;
+    width: 100%;
+}
+footer p{
+    color: #6a6a6a;
+    padding-bottom: 20px;
+    padding-left: 80px;
+}
+footer p > a{
+    color: rgb(42, 83, 134);
+}
+.footer-container{
+    height: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+footer a{
+    text-decoration-color: rgb(3, 11, 39);
+}
+footer a:hover{
+    text-decoration: underline;
+    text-decoration-color: rgb(19, 74, 255);
+    transition-duration: 0.5s;
+    
+}
+.title{
+    color: #d3d3d3;
+    margin-left: 140px;
+    padding-top: 40px;
+}
+.lists{
+    height:75%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+.lists ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size:18px;
+}
+.lists h4{
+    margin-right: 10px;;
+    color: #6a6a6a;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.information{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+}
+.information h4{
+    color: #6a6a6a;
+    font-size: 13px;
+}
+.information > div > a{
+    margin:20px;
+}
+.subscribe{
+    color: #d3d3d3;
 }
