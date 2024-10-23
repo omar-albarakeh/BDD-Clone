@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color:rgba(192, 192, 192, 0.735);
+    background-color:rgba(255, 255, 255, 0.735);
 }
 
 .header {
@@ -304,4 +304,14 @@ a {
 .btn:hover {
     background-color: #0056b3;
     transition: background-color 0.3s;
+}
+
+.download-section{
+    background-color:white;
+    margin-left:500px;
+    width:100%;
+}
+.download-section-img img{
+    width:15%;
+    margin-top: 20px;
 }
